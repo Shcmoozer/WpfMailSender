@@ -61,12 +61,15 @@
                                 <ComboBoxItem>smtp.gmail.com:25</ComboBoxItem>-->
                             </ComboBox>
                             <Button ToolTip="Добавить"
+                                    Click="OnAddServerButtonClick"
                                     fa:Awesome.Content="Solid_Plus"
                                     Foreground="Green"/>
                             <Button ToolTip="Редактировать"
+                                    Click="OnEditServerButtonClick"
                                     fa:Awesome.Content="Solid_Edit"
                                     Foreground="SaddleBrown"/>
-                            <Button ToolTip="Добавить"
+                            <Button ToolTip="Удалить"
+                                    Click="OnDeleteServerButtonClick"
                                     fa:Awesome.Content="Solid_Times"
                                     Foreground="Red"/>
                         </ToolBar>
@@ -133,7 +136,8 @@
                             <Calendar SelectedDate="2020-09-28"/>
                             <UniformGrid Columns="1" Margin="5">
                                 <Button Content="Запланировать"/>
-                                <Button Content="Отправить сейчас"/>
+                                <Button Content="Отправить сейчас"
+                                        Click="OnSendNowButtonClick"/>
                             </UniformGrid>
                         </StackPanel>
                     </GroupBox>
@@ -206,6 +210,7 @@
                             <GroupBox Header="Тело письма">
                                 <TextBox AcceptsReturn="True" TextWrapping="Wrap"
                                          Text="{Binding SelectedItem.Body, ElementName=MessagesList}"/>
+                               
                             </GroupBox>
                         </DockPanel>
                     </GroupBox>
