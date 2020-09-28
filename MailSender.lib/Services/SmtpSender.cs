@@ -9,7 +9,7 @@ using System.Net.Mail;
 
 namespace WpfMailSender.Services
 {
-    class SmtpSender
+    public class SmtpSender
     {
         private readonly string _Address;
         private readonly int _Port;

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WpfMailSender.Models
 {
-    class Recipient
+    public class Sender
     {
         public int Id { get; set; }
         public string Name { get; set; }
