@@ -31,6 +31,8 @@ namespace WPFTests
             //var to = new MailAddress(DataStorage.MailTo);
 
             //dsfadf
+            //dfsf
+            //dvdf
             //var message = new MailMessage(from, to)
             //{
             //    Subject = DataStorage.MsgSubject + DateTime.Now, 
