@@ -14,21 +14,31 @@ namespace WpfMailSender.Data
             new Server
             {
                 Id = 1,
-                Name = "Яндекс",
-                Address = "smpt.yandex.ru",
-                Port = 587,
+                Name = "Mail.ru",
+                Address = "smtp.mail.ru",
+                Port = 25,
                 UseSSL = true,
-                Login = "user@yandex.ru",
+                Login = "pns95@mail.ru",
                 Password = "PassWord",
             },
             new Server
             {
                 Id = 2,
                 Name = "gMail",
-                Address = "smpt.gmail.com",
+                Address = "smtp.gmail.com",
                 Port = 465,
                 UseSSL = true,
                 Login = "user@gmail.com",
+                Password = "PassWord",
+            },
+            new Server
+            {
+                Id = 1,
+                Name = "Яндекс",
+                Address = "smtp.yandex.ru",
+                Port = 587,
+                UseSSL = true,
+                Login = "user@yandex.ru",
                 Password = "PassWord",
             }//,
         };
@@ -39,7 +49,7 @@ namespace WpfMailSender.Data
             {
                 Id = 1,
                 Name = "Пупкин",
-                Address = "pupkin@server.ru",
+                Address = "pns95@mail.ru",
                 Description = "Почта от Пупкина"
             },
             new Sender
@@ -65,7 +75,7 @@ namespace WpfMailSender.Data
             {
                 Id = 1,
                 Name = "Пупкин",
-                Address = "pupkin@server.ru",
+                Address = "pns9595@mail.ru",
                 Description = "Почта для Пупкина"
             },
             new Recipient
