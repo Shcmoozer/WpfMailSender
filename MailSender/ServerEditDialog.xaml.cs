@@ -28,7 +28,7 @@ namespace MailSender
             if (!(Sender is TextBox text_box) || text_box.Text == "") return;
             // иначе если не удалось превратить текст в число, то
             // отмечаем событие как обработанное - текст не введётся
-            E.Handled = !int.TryParse(text_box.Text, out _);
+            E.Handled = !int.TryParse(text_box.Text, out _);//тест
         }
         /// <summary>
         /// Обработчик события кнопки
